@@ -1,0 +1,19 @@
+Ejercicio1
+
+ls -l | awk '{print $5,$9}' | sed's/ /:/'
+
+Ejercicio2
+
+ls -l | awk '{print $5,$9}' | sort -n
+
+Ejercicio3
+
+cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep empate | sort -k3n | awk '{print $2,$3}' > empate.txt
+
+Ejercicio4
+
+cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Levante | sort -k3n | awk '{print $2,$3}' > Levante.txt
+
+Ejercicio5
+
+cat derbi.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Valencia | sort -k3n | awk '{print $2,$3}' > Valencia.txt
